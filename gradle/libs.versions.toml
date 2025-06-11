@@ -1,0 +1,63 @@
+[versions]
+agp = "8.7.3"
+coilNetworkOkhttp = "3.2.0"
+coilCompose = "3.2.0"
+grpcKotlinStub = "1.4.3"
+grpcProtobuf = "1.73.0"
+humanReadable = "1.11.0"
+kotlin = "2.0.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxDatetime = "0.6.2"
+kotlinxSerializationJson = "1.8.1"
+activityCompose = "1.10.1"
+composeBom = "2025.06.00"
+lifecycle = "2.9.1"
+navigation = "2.9.0"
+protobufKotlin = "4.31.1"
+webkit = "1.14.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-savedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coilNetworkOkhttp" }
+human-readable = { module = "nl.jacobras:Human-Readable", version.ref = "humanReadable" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpcProtobuf" }
+grpc-kotlin-stub = { module = "io.grpc:grpc-kotlin-stub", version.ref = "grpcKotlinStub" }
+protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "protobufKotlin" }
+protoc = { group = "com.google.protobuf", name = "protoc", version = "3.25.8" }
+protoc-gen-grpc-kotlin = { group = "io.grpc", name = "protoc-gen-grpc-kotlin", version = "1.4.3" }
+protoc-gen-grpc-java = { group = "io.grpc", name = "protoc-gen-grpc-java", version.ref = "grpcProtobuf" }
+grpc-okhttp = { group = "io.grpc", name = "grpc-okhttp", version.ref = "grpcProtobuf" }
+grpc-api = { group = "io.grpc", name = "grpc-api", version.ref = "grpcProtobuf" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+protobuf = { id = "com.google.protobuf", version = "0.9.4" }

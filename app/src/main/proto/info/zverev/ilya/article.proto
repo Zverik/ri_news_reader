@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package info.zverev.ilya;
+
+option java_package = "info.zverev.ilya";
+
+message Article {
+  string title = 1;
+  string url = 2;
+}
+
+message SaveArticleResponse {
+  optional string error = 1;
+}
+
+service ArticleStorage {
+  rpc SaveArticle(Article) returns (SaveArticleResponse);
+}
