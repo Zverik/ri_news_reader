@@ -3,7 +3,6 @@ package info.zverev.ilya.rinewsreader.models
 import kotlinx.datetime.Instant
 import kotlinx.serialization.Serializable
 import java.net.URI
-import java.time.ZonedDateTime
 
 @Serializable
 data class NewsApiResponse(
