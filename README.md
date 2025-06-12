@@ -38,10 +38,12 @@ Android app architecture properly.
   multiple different states, some of which are reset on configuration change
   (e.g. rotating the device). People use view models, but their handling feels
   esotheric. Need to research this more.
-* Tied to state, coroutines in Kotlin are way more obscure than async-await
+* Tied to state: coroutines in Kotlin are way more obscure than async-await
   in Flutter. We're launching stuff in what feels like separate threads
   with `scope.launch {}`, but losing control of data with this separation.
   Like, inside a coroutine we can't be sure which calls await and which don't.
+* There is absolutely no way of making cards in `LazyGrid` the same size,
+  except fixing their size in dp's.
 
 ## Reference
 
