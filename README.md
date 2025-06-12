@@ -4,8 +4,8 @@ Folks at [Ridango](https://www.ridango.com/careers/) asked to write a sample And
 and here it is. Four days ago I had no idea how to code in Kotlin, and now here it is,
 in its Jetpack Compose and gRPC glory.
 
-To compile, you would need `secrets.properties` file. [Get your News API key](https://newsapi.org/account)
-and put it in there.
+To compile, you would need `secrets.properties` file. Copy the `.sample`,
+[get your News API key](https://newsapi.org/account) and put it in there.
 
 The app displays some news from the API and downloads more pages as you scroll down.
 Tapping an article card gets you its full text, and there is also a bookmarking
